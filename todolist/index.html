@@ -13,43 +13,41 @@
 
 <body>
     <!-- 모달창 -->
-    <article>
-        <h2>To Do List</h2>
-        <div>
-            <form>
-                <label for="inpTodo"></label>
-                <input id="inpTodo" type="text" placeholder="할 일을 적어주세요">
-                <button type="button">Add</button>
+    <article class="modal-todolist">
+        <h2 class="title">To Do List</h2>
+        <form class="form">
+            <label for="inpTodo"></label>
+            <input id="inpTodo" type="text" placeholder="할 일을 적어주세요">
+            <button class="btn-add" type="button">Add</button>
             </form>
             <div>
-                <p>남은 할 일: </p>
+                <p class="total">전체: </p>
                 <button type="button">Clear</button>
             </div>
-            <section>
+            <section class="list-wrapper">
                 <h3 class="a11y-hidden">목록</h3>
-                <ul>
-                    <li>
+                <ul class="list-container">
+                    <li class="list-item">
                         <label for="chckList1"></label>
                         <input id="chckList1" type="checkbox" id="">
                         <p>딥다이브 읽기</p>
-                        <button type="button">삭제</button>
+                        <button class="btn-del" type="button">삭제</button>
                     </li>
-                    <li>
+                    <li class="list-item">
                         <label for="chckList2"></label>
                         <input id="chckList2" type="checkbox" id="">
                         <p>블로그 글쓰기</p>
-                        <button type="button">삭제</button>
+                        <button class="btn-del" type="button">삭제</button>
                     </li>
-                    <li>
+                    <li class="list-item">
                         <label for="chckList3"></label>
                         <input id="chckList3" type="checkbox" id="">
                         <p>복습하기</p>
-                        <button type="button">삭제</button>
+                        <button class="btn-del" type="button">삭제</button>
                     </li>
                 </ul>
             </section>
-        </div>
-        <button>닫기</button>
+        <button class="btn-close" type="button"></button>
     </article>
 
     <!-- JavaScript -->
