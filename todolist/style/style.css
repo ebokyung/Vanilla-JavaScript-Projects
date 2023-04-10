@@ -25,3 +25,6 @@ ul,
 li {
     list-style: none;
 }
+body {
+    background-color: #e6e6fa;
+}
