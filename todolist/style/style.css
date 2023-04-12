@@ -31,7 +31,7 @@ button {
     cursor: pointer;
 }
 body {
-    background-color: #e6e6fa;
+    background-color: teal;
 }
 /* layout */
 .modal-todolist {

@@ -38,3 +38,13 @@ const cntList = () => {
     const cnt = listContainer.childElementCount
     span.textContent = `${cnt} 개`;
 }
+
+// 전체 삭제
+btnClear.addEventListener('click', () => {
+    // console.log(listContainer.children)
+    while (listContainer.firstChild) {
+        listContainer.firstChild.remove()
+        console.log(listContainer.firstChild)
+    }
+    cntList()
+})
