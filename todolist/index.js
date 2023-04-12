@@ -16,4 +16,12 @@ btnAdd.addEventListener('click', () => {
                 </li>`
     li.innerHTML = item
     listContainer.append(li)
+    inp.value = ''
 })
+
+listContainer.addEventListener('click', (e) => {
+    if (e.target.type === 'button' && e.target.className === 'btn-del') {
+        e.target.parentElement.remove()
+    }
+})
+
